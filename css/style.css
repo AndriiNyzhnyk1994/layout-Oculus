@@ -401,13 +401,12 @@ body {
   gap: 20px;
 }
 
-.equipment__box-item {
-  
-}
+.equipment__box-item {}
 
 .equipment__box-item--one {
   grid-row: 1/-1;
 }
+
 .equipment__box-img {
   margin-bottom: 10px;
 }
@@ -422,4 +421,40 @@ body {
   font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+
+/* -------------------PROMO BLOCK------------------ */
+.promo {
+  margin-bottom: 100px;
+}
+
+.promo__inner {
+  background-image: url(../images/promo.jpeg);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.promo__btn {
+  background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto; 
 }
