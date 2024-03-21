@@ -224,6 +224,7 @@ body {
   position: absolute;
   transition: opacity .3s ease;
 }
+
 .tabs__content-item--active {
   opacity: 1;
 }
@@ -234,6 +235,7 @@ body {
 }
 
 .tabs__content-box {}
+
 .tabs__content-box h3 {
   font-weight: 400;
   font-size: 24px;
@@ -274,13 +276,16 @@ body {
 .game__title {
   margin-bottom: 50px;
 }
+
 .game__inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .game__descr {
   padding-right: 10px;
 }
+
 .game__descr-title {
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
@@ -289,9 +294,11 @@ body {
   font-size: 36px;
   margin-bottom: 10px;
 }
+
 .game__descr-text {
   margin-bottom: 24px;
 }
+
 .game__link {
   display: inline-block;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
@@ -300,29 +307,76 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding: 16px 15px 12px;
-  border: 1px solid #BC10D8; 
+  border: 1px solid #BC10D8;
   width: 225px;
   text-align: center;
 }
+
 .game__item {
   border: 1px solid #BC10D8;
   padding: 10px 20px 18px;
   display: flex;
   flex-direction: column;
 }
+
 .game__item-img {
   margin-bottom: 10px;
 }
+
 .game__item-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 .game__item-text {
   margin-bottom: 30px;
 }
+
 .game__item-link {
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: auto;
+}
+
+
+
+/* ------------------------BUY BLOCK------------------------ */
+.buy {
+  margin-bottom: 110px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.buy__bg {
+  background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 400px;
+  font-weight: 700;
+  line-height: 400px;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -1;
+  animation: line-text 6s linear 1s infinite;
+}
+
+.buy__img {
+  margin-bottom: 30px;
+}
+
+.buy .buy-btn {
+  margin: 0 auto;
+}
+
+@keyframes line-text {
+  from{
+    transform: translateX(115%);
+    transform-origin: left center;
+  }
+  to{
+    transform: translateX(-115%);
+    transform-origin: right center;
+  }
 }
