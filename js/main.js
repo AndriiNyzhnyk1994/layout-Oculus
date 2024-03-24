@@ -22,3 +22,11 @@ function open(event) {
 tabItem.forEach( function(el) {
     el.addEventListener('click', open)
 } )
+
+
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('menu--active');
+})
