@@ -626,6 +626,17 @@ body {
 
 
 /* -------------------MEDIA REQUESTS------------------------- */
+
+@media(max-width: 1140px) {
+  .footer .menu{
+    display: none;
+  }
+  .footer .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media(max-width: 992px) {
   .tabs {
     display: block;
@@ -749,6 +760,15 @@ body {
   }
   .accessories__text {
     font-size: 28px;
+  }
+  .footer .nav {
+    height: auto;
+    flex-direction: column;
+  }
+  .social {
+    order: -1;
+    gap: 30px;
+    margin-bottom: 20px;
   }
 }
 @media(max-width: 420px) {
